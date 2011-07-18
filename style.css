@@ -1,7 +1,6 @@
 body {
   font-family:
     "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  margin: 70pt;
   color: rgb(90,90,90);
 }
 h1 {
@@ -39,4 +38,27 @@ a:active, a:hover{
 
 .tags {
     font-style: italic;
+}
+
+@media screen {
+    body {margin: 70pt;}
+}
+
+@media print {
+    h2 {
+	page-break-before: always;
+    }
+    
+    p, dd {
+	orphan: 2;
+	widow: 2;
+	page-break-inside: avoid;
+    }
+    
+    @page {
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:20%;
+	margin-bottom:10%;
+    }
 }
