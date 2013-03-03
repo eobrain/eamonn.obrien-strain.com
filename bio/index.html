@@ -35,7 +35,7 @@ the foundation for integrating research technologies into scalable
 transferring them to the product divisions.  He has championed agile processes and engineering
 practices on several projects and personally assembled and guided
 agile teams to successful, high quality releases of Autophotobook SaaS
-and <a href="http://www.tangible-web.com">Tangible Web</a>.  He has worked on pervasive computing,
+and <a href="http://www.hpclipper.com">HP Clipper</a>.  He has worked on pervasive computing,
 synthesis of video from consumer media, designing platforms to advance
 research in multimedia algorithms, and the use of on-line casual games
 to help organize personal photo collections.</p>
@@ -44,7 +44,12 @@ to help organize personal photo collections.</p>
 
 <p>O'Brien-Strain chased the Silicon Valley dream in several start-ups, the latest of which was an Internet company providing a light-weight project management and collaboration platform for freelancers and small business, which HP acquired in 2001.</p>
 
-<p>His open-source Web OS app, <a href="https://developer.palm.com/webChannel/index.php?packageid=org.eamonn.nrby">Nrby Photos</a>, has had more than 10,000 downloads (despite still being in beta and not in the app store) and a four-star rating.</p>
+<p>His open-source projects
+  include <a href="http://www.glawn.org/">Gla<sup>w</sup>n</a>, a very
+  simple fully-static CMS and web-site builder
+  and <a href="https://developer.palm.com/webChannel/index.php?packageid=org.eamonn.nrby">Nrby
+  Photos</a> a Web OS app has had more than 10,000 downloads (despite
+  still being in beta and not in the app store) and a four-star rating.</p>
 
 <p>He has fourteen published patents (eight granted and six pending) with
 more in the pipeline.</p>
@@ -105,28 +110,67 @@ into chip designs. </dd>
 <dd>Bachelor of Engineering (Electronic), University College Dublin, Ireland</dd>
 </dl>
 
-<h2>Published Patents (Out of 24 filed)</h2>
+<h2>Granted U.S. Patents</h2>
+(Many more published or filed.)
+
 <dl>
 
-<dt>20100235312 Creating An Album (Automatic Story-album Creation Using Metadata Assigned Implicitly from Label Taxonomies Via a Fun User Interface)</dt>
-<dt>200702163 Spatiotemporal Media Object Layouts (A System To Combine Multiple Photographs And Videos By Optimizing A Space-time Tree Of Aesthetic Rules)</dt>
-<dt>200603118 Concurrent Presentation of Video Segments Enabling Rapid Video File Comprehension (Video Summarization Using Arrays Of Video Thumbnails With Tail-chasing Movements to Avoid Looping Discontinuities)</dt>
+<dt>7,797,359 Recursive data naming</dt>
+<dd>This patent addresses the problem of how to build a data-store overlay on a radically-distributed ensemble of devices. It combines aspects of DNS, distributed-file systems, REST, and key-value noSQL stores. It is designed to have no single points of failure, to be resilient to network partitions, and to have no central authority.</dd>
 
-<dt>8132096 Image composition evaluation (Photo Aesthetics) [Granted]</dt>
-<dt>7668400 Image Layout Constraint Generation (Generating Slideshows from Photos) [Granted]</dt>
-<dt>7751627 Image Dominant Line Determination And Use (Using The Dominant Line Of An Image To Intelligently Determine Pan Direction) [Granted]</dt>
-<dt>7596751 Contact Sheet Based Image Management (Paper-based Sort Of Photos) [Granted]</dt>
+<dt>7,751,627 Image dominant line determination and use</dt>
+<dd>Find the perceptually dominant line in the composition of a
+  photograph.</dd>
 
-<dt>200507137 Generation, transmission, and display of sub-frames (Partitioning Pluribus Across the Network for Better Security, Hardware Cost, Manageability, and Revenue Control Points)</dt>
 
-<dt>200404603 Securely Propagating Authentication In An Ensemble Of Devices Using Single Sign-on [Granted] </dt>
-<dt>7797359 Recursive Data Naming (Distributed Recursive Data Naming) [Granted]</dt>
-<dt>7721085 Encryption Of Hierarchically Structured Information (Encrypting Tree-Structured Text Documents to Obscure Data While Allowing Computation of Incremental Differences and The Ability to Merge Documents) [Granted]</dt>
-<dt>200312800 Secure Incremental Updates To Hierarchically Structured Information  (Encryption Scheme for Graph and Tree Structures And XML Documents.  The Scheme Hides the Hierarchy and Allows Incremental Updates and Merges On Untrusted Machines)</dt>
-<dt>200313806 Verifying incremental updates to hierarchically structured information (Technique To Generate Authentication Codes to Support Incremental Changes to Tree, Graph Or XML Oriented Documents)</dt>
+<dt>7,721,085 Encryption of hierarchically structured information</dt>
+<dd>How to encrypt an XML or JSON document, while preserving the
+  hierarchical structure so that certain operations can still be
+  performed without decryption.</dd>
 
-<dt>7069204 Method and system for performance level modeling and simulation of electronic systems having both hardware and software elements [Granted] </dt>
+
+<dt>7,668,400 Image layout constraint generation</dt>
+<dd>How to select and layout photographs in a slideshow.</dd>
+
+<dt>7,620,978 Securely propagating authentication in an ensemble of devices using single sign-on</dt>
+<dd>Using cryptography to propagate mutual trust through a local
+  network ensemble of personal devices.</dd>
+
+
+<dt>7,596,751 Contact sheet based image management</dt>
+<dd>Using a combination scanner/printer to organize a photo collection by printing out a thumbnails and scanning back the thumbnails with handwritten annotated instructions.</dd>
+
+
+<dt>7,069,204 Method and system for performance level modeling and simulation of electronic systems having both hardware and software elements</dt>
+<dd>A computer-aided-design tool that allowed the software and hardware of a complex embedded system to be designed and simulated together.</dd>
+
+
+<dt>8,132,096 Image composition evaluation</dt>
+<dd>Represent rules of photo composition (e.g. the rule of thirds) as a grayscale map. Represent how salient different parts of a photograph are by another grayscale map. Compare the two maps to find out how compositionally good the photo is, or shift the maps relative to each other so that the salient areas line up with the best areas compositionally, and thus get a nice cropping of a photograph.</dd>
+
+
+<dt>8,301,669 Concurrent presentation of video segments enabling rapid
+  video file comprehension</dt>
+<dd>This is an array of short looping video thumbnails that move so that end of loop flows seamlessly into the beginning of the loop giving the illusion of continuously advancing snake of videos. You can
+see overall structure of the video, concentrate on one point, or watch
+  entire video by following one thumbnail.</dd>
+
+
+<dt>8,275,733 Creating an album</dt>
+<dd>Have people play games with their photos to gather metadata for
+  creating photobooks.</dd>
+
+
+<dt>8,275,745 Secure incremental updates to hierarchically structured information</dt>
+<dd>In this scheme, a hierarchically structured file (e.g. XML or
+  JSON) is represented as a flat set of triples of the form “elementId
+  parentId elementValue”. Each triple is then encrypted into a pair
+  like so “elementId encrypt(nonce, parentId,elementValue)”. The envisaged system is where an untrusted system is storing a large hierarchical tree, and a a trusted system wants to make incremental updates to it.</dd>
+
+<dt>8,208,477 Data-dependent overlay network</dt>
+<dd>This is an extension of standard peer-to-peer overlay P2P networks that can be more resilient to network partition. In a standard distributed hash table system, data objects are placed on different devices (“peers”) around the network without regard to how those data objects will be used.</dd>
 </dl>
+
 
 <h2>Selected Publications</h2>
 <dl>
